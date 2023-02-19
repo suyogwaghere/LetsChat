@@ -1,0 +1,240 @@
+<!-- <p>chats works!</p> -->
+<body>
+  <div class="row g-2">
+    <nav class="navbar rounded-4 navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../../assets/signup/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <div
+            matBadge="10"
+            matBadgeSize="medium"
+            matBadgePosition="after"
+            matBadgeOverlap="true"
+            matBadgeColor="warn"
+            class="mx-3 mt-2"
+          >
+            <mat-icon class="">notifications</mat-icon>
+          </div>
+
+          <!-- <h5 class="uxg-h5">User Profile</h5> -->
+          <img class="p-2" src="../../assets/chats/userProfile.png" alt="" />
+
+          <mat-icon class="" mat-button [matMenuTriggerFor]="menu">
+            arrow_drop_down
+          </mat-icon>
+
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="">Logout</button>
+            <!-- <button mat-menu-item>Item 2</button> -->
+          </mat-menu>
+          <!-- angular navbar code -->
+
+          <!-- angular navbar code -->
+          <!-- </div> -->
+          <!-- <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="row py-2">
+    <div class="col-4">
+      <!-- <mat-form-field appearance="">
+        <mat-label>Search User</mat-label>
+        <input matInput /> -->
+      <!-- [(ngModel)]="searchTerm" -->
+      <!-- <mat-icon matPrefix>search</mat-icon>
+      </mat-form-field> -->
+
+      <!-- inpput -->
+
+      <div class="input-group my-1">
+        <input type="text" class="form-control" aria-label="Search User" />
+        <button type="button" class="btn btn-outline-secondary">
+          <mat-icon matPrefix>search</mat-icon>
+        </button>
+      </div>
+
+      <!-- inpput -->
+    </div>
+    <div class="col w-75 d-grid gap-2 d-md-flex justify-content-md-end">
+      <button mat-flat-button color="primary" class="my-2">
+        + Create Group
+      </button>
+      <button mat-flat-button color="primary" class="my-2">Clear Chat</button>
+    </div>
+  </div>
+  <div class="row">
+    <!-- justify-content-start align-items-start g-2 -->
+    <div class="col-4">
+      <div class="border rounded-4 mh-100">
+        <div class="m-2">
+          <mat-list>
+            <mat-list-item>
+              <div class="row">
+                <div class="col-sm-2">
+                  <img
+                    class="p-2"
+                    src="../../assets/chats/userProfile.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-8 py-2">Jack Smith</div>
+                <div class="col-sm-2">
+                  <div
+                    matBadge="7"
+                    matBadgeSize="small"
+                    matBadgePosition="after"
+                    matBadgeOverlap="true"
+                    class="demo-section m-4"
+                  ></div>
+                </div>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="row">
+                <div class="col-sm-2">
+                  <img
+                    class="p-2"
+                    src="../../assets/chats/userProfile.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-8 py-2">Mack Wills</div>
+                <div class="col-sm-2">
+                  <div
+                    matBadge="2"
+                    matBadgeSize="small"
+                    matBadgePosition="after"
+                    matBadgeOverlap="true"
+                    class="demo-section m-4"
+                  ></div>
+                </div>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="row">
+                <div class="col-sm-2">
+                  <img
+                    class="p-2"
+                    src="../../assets/chats/userProfile.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-8 py-2">John Doe</div>
+                <div class="col-sm-2">
+                  <div
+                    matBadge="1"
+                    matBadgeSize="small"
+                    matBadgePosition="after"
+                    matBadgeOverlap="true"
+                    class="demo-section m-4"
+                  ></div>
+                </div>
+              </div>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="border rounded-4">
+        <div class="row h-20">
+          <p>
+            <mat-toolbar class="rounded-4">
+              <!-- <div class="row sm-8"> -->
+              <div class="col-sm-1">
+                <img
+                  class="p-2"
+                  src="../../assets/chats/userProfile.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-10 py-2">Jack Smith</div>
+              <!-- <div class="col-sm-2">
+                  <div
+                    matBadge="4"
+                    matBadgeSize="small"
+                    matBadgePosition="after"
+                    matBadgeOverlap="true"
+                    class="demo-section m-4"
+                  ></div>
+                </div> -->
+              <!-- <span>My App</span> -->
+              <!-- <span class="example-spacer"></span> -->
+
+              <button
+                mat-icon-button
+                [matMenuTriggerFor]="menuChat"
+                aria-label="icon-button with a menu"
+                class="ms-4"
+              >
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menuChat="matMenu">
+                <button mat-menu-item>
+                  <mat-icon>block</mat-icon>
+                  <span>Block</span>
+                </button>
+
+                <button mat-menu-item>
+                  <mat-icon>notifications_off</mat-icon>
+                  <span>Mute</span>
+                </button>
+              </mat-menu>
+              <!-- </div> -->
+            </mat-toolbar>
+          </p>
+        </div>
+        <div class="row mh-60 m-2">
+          <mat-chip-listbox aria-label="Fish selection">
+            <mat-chip-option>Hellooo</mat-chip-option>
+          </mat-chip-listbox>
+        </div>
+        <div class="row h-20 m-2">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Type a message"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
